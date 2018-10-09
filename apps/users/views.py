@@ -24,6 +24,12 @@ class CustomBackend(ModelBackend):
             return None
 
 
+class RegisterView(View):
+
+    def get(self, request):
+        return render(request, 'register.html', {})
+
+
 class LoginView(View):
 
     def get(self, request):
