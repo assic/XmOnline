@@ -8,6 +8,8 @@ pip install -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com pil
 
 pip install git+git://github.com/sshwsfc/xadmin.git@django2
 
+pip install django-simple-captcha
+
 makemigrations
 
 migrate
