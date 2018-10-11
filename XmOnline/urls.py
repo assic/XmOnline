@@ -17,7 +17,7 @@ Including another URLconf
 from django.urls import path, include
 from xadmin.plugins import xversion
 from django.views.generic import TemplateView
-from apps.users.views import LoginView, RegisterView
+from apps.users.views import LoginView, RegisterView, ActiveUserView
 import xadmin
 
 xadmin.autodiscover()
@@ -31,4 +31,5 @@ urlpatterns = [
     path('login/', LoginView.as_view(), name="login"),
     path('register/', RegisterView.as_view(), name="register"),
     path('captcha/', include('captcha.urls')),
+    path('active/(?P<active_code>.*)/', ActiveUserView.as_view, name="user_active")
 ]
