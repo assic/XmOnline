@@ -148,11 +148,9 @@ STATICFILES_DIRS = [
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = "smtp.exmail.qq.com"
-EMAIL_PORT = 465
-# EMAIL_PORT = 25
-EMAIL_HOST_USER = "343134072@qq.com"
-EMAIL_HOST_PASSWORD = "xxxxxx"
-# EMAIL_USE_TLS = False
-EMAIL_USE_SSL = True
-EMAIL_FROM = "343134072@qq.com"
+EMAIL_HOST = "smtp.qq.com"
+EMAIL_PORT = 25
+EMAIL_HOST_USER = "xxx@qq.com"
+EMAIL_HOST_PASSWORD = "授权码"
+EMAIL_USE_TLS = True
+EMAIL_FROM = EMAIL_HOST_USER
