@@ -23,12 +23,10 @@ class GlobalSetting(object):
 
 
 class EmailVerifyRecordAdmin(object):
-    # 显示字段列
     list_display = ['code', 'email', 'send_type', 'send_time']
-    # 搜索
     search_fields = ['code', 'email', 'send_type']
-    # 过滤器
     list_filter = ['code', 'email', 'send_type', 'send_time']
+    model_icon = 'fa fa-address-book-o'
 
 
 class BannerAdmin(object):
